@@ -9,7 +9,7 @@ section{
 	position:relative;
 	width:100%;
 	min-height:100vh;
-	background:url('img/bg.jpg');
+	background:url('bg.jpg');
 	
 	background-size:cover;
 	background-size:100% 100%;
@@ -121,7 +121,7 @@ header .navigation li a:hover{
 	}
 	section{
 		padding:40px;
-		background:url('img/bg2.jpg');
+		background:url('bg2.jpg');
 		background-position:center;
 		background-size:cover;
 		
@@ -158,7 +158,7 @@ header .navigation li a:hover{
 		position:relative;
 		width:30px;
 		height:30px;
-		background:url('img/menu.png');
+		background:url('menu.png');
 		background-position:center;
 		background-size:30px;
 		background-repeat:no-repeat;
@@ -167,7 +167,7 @@ header .navigation li a:hover{
 	}
 	
 	.togglebtn.active{
-		background:url('img/close.png');
+		background:url('close.png');
 		background-position:center;
 		background-size:24px;
 		background-repeat:no-repeat;
