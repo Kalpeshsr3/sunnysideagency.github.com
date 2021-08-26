@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+section{
+	position:relative;
+	width:100%;
+	min-height:100vh;
+	background:url('img/bg.jpg');
+	
+	background-size:cover;
+	background-size:100% 100%;
+	background-position:center center;
+	
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	
+	padding:100px;
+}
+
+header{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding:30px 100px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+header .logo{
+	position:relative;
+	font-size:2em;
+	text-transform:uppecase;
+	color:#fff;
+	text-decoration:none;
+	font-weight:700;
+	letter-spacing:1px;
+	
+}
+
+header .navigation{
+    position:relative;
+	display:flex;
+}
+
+header .navigation li{
+	list-style:none;
+}
+
+header .navigation li a{
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	margin-right:40px;
+}
+
+header .navigation li a:hover{
+	color:#03a9f4;
+}
+
+.content{
+	max-width:600px;
+	
+}
+
+.content .contentBox h2{
+	font-size:4em;
+	color:#fff;
+	line-height:1em;
+}
+
+.content .contentBox p{
+	font-size:1.1em;
+	color:#fff;
+	font-weight:300;
+	margin:20px 0;
+	text-align:justify;
+}
+
+.content .contentBox a{
+	display:inline-block;
+	background-color:#03a9f4;
+	padding:10px 30px;
+	color:#fff;
+	text-decoration:none;
+	letter-spacing:1px;
+	font-weight:500;
+	
+}
+
+.social{
+	position:absolute;
+	bottom:30px;
+	display:flex;
+}
+
+.social li{
+	list-style:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.social li a {
+	position:relative;
+	display:inline-block;
+	margin-right:20px;
+	filter:invert(1);
+	transform:scale(0.5);
+}
+
+@media (max-width:1089px){
+	header{
+		padding:15px 40px;
+	}
+	section{
+		padding:40px;
+		background:url('img/bg2.jpg');
+		background-position:center;
+		background-size:cover;
+		
+		
+	}
+	.content .contentBox h2{
+		font-size: 2.5em;
+	}
+	.content .contentBox p{
+		font-size: 1em;
+	}
+	
+	header .navigation{
+		position:fixed;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background:#000;
+		z-index:10;
+		display:none;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+	}
+	
+	header .navigation li a{
+		font-size:24px;
+		margin:10px 0;
+		
+	}
+	
+	.togglebtn{
+		position:relative;
+		width:30px;
+		height:30px;
+		background:url('img/menu.png');
+		background-position:center;
+		background-size:30px;
+		background-repeat:no-repeat;
+		cursor:pointer;
+		z-index:11;
+	}
+	
+	.togglebtn.active{
+		background:url('img/close.png');
+		background-position:center;
+		background-size:24px;
+		background-repeat:no-repeat;
+		cursor:pointer;
+	}
+	
+	header .navigation.active{
+		display:flex;
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Landing Page</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   
+  </head>
+  <body>
+  
+  <section>
+   <header>
+    <a href="#" class="logo">Fitness</a>
+	
+	<div class="togglebtn" onclick="togglebtn();"></div>
+	
+	 <ul class="navigation">
+	  <li><a href="#">Home</a></li>
+	  <li><a href="#">About</a></li>
+	  <li><a href="#">Trainer</a></li>
+	  <li><a href="#blog">Blog</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	 </ul>
+   </header>
+    <div class="content">
+	 <div class="contentBox">
+	  <h2>Build Perfect Body<br/>
+	      With Clean Mind</h2>
+	  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+	  </p>
+	 <a href="#">Get Started</a>
+	 </div>
+	</div>
+	
+	<ul class="social">
+	 <li><a href="#"><img src="img/facebook.png"></a></li>
+	 <li><a href="#"><img src="img/instagram.png"></a></li>
+	 <li><a href="#"><img src="img/twitter.png"></a></li>
+	</ul>
+	
+  </section>
+  
+  
+   
+   <script type="text/javascript">
+  
+  function togglebtn(){
+  const togglebtn = document.querySelector('.togglebtn');
+  const navigation = document.querySelector('.navigation');
+  togglebtn.classList.toggle('active');
+  navigation.classList.toggle('active');
+  }
+  
+  </script>
+  </body>
+  
+  
+ 
+ </html>
